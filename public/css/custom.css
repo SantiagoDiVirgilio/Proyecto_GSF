@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+/* FullCalendar Overrides */
+.fc-timegrid-event-harness-inset .fc-timegrid-event,
+.fc-timegrid-event.fc-event-mirror,
+.fc-timegrid-more-link {
+    box-shadow: none;
+    margin: 0;
+}
+
+.fc-v-event {
+    border: none;
+
+}
+
+.fc .fc-timegrid-slot {}
+
+.reservada {
+    background-color: #800000ff;
+    border: 1px solid rgb(255, 0, 0);
+    color: white !important;
+}
+
+.confirmada {
+    background-color: #ffae00ff;
+    border: 1px solid rgb(238, 255, 0);
+    color: black !important;
+}
+
+.libre {
+    background-color: rgb(0, 128, 0);
+    border: 1px solid rgb(146, 241, 146);
+    color: white !important;
+}
+
+.reservada,
+.confirmada,
+.libre {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
